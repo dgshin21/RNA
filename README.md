@@ -1,6 +1,6 @@
 # RNA
-This repository contains code and the real world dataset for our paper: "Representation Norm Amplification for
-Out-of-Distribution Detection in Long-Tail Learning".
+This repository contains code and the real world dataset for our paper: [Representation Norm Amplification for
+Out-of-Distribution Detection in Long-Tail Learning](https://openreview.net/forum?id=z4b4WfvooX).
 
 
 ## Dependencies
