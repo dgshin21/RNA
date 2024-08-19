@@ -14,11 +14,15 @@ Out-of-Distribution Detection in Long-Tail Learning](https://openreview.net/foru
 
 ## How to get the dataset
 ### CIFAR 
-You can get the CIFAR10 and CIFAR100 training and test dataset from the official website: [https://www.cs.toronto.edu/~kriz/cifar.html].
+You can get the CIFAR10 and CIFAR100 training and test dataset from the official website: https://www.cs.toronto.edu/~kriz/cifar.html.
 - CIFAR10<br>
+```bash
 wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+```
 - CIFAR100<br>
+```bash
 wget https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
+```
 
 ### ImageNet 
 You can get the ImageNet datasets from the official website after log-in: https://image-net.org/download-images.php
