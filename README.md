@@ -98,6 +98,19 @@ python test.py --ds imagenet --model ResNet50 --batch_size 256 --ckpt_path \<whe
 The test code will print out the evaluation results of 3 OOD performance metrics (AUROC, AUPR, FPR95) 
 and 4 classification performance metrics (ACC, Many, Medium, Few).
 
+### Citing
+```
+@article{
+shin2024representation,
+title={Representation Norm Amplification for Out-of-Distribution Detection in Long-Tail Learning},
+author={Dong Geun Shin and Hye Won Chung},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=z4b4WfvooX},
+}
+```
+
 ### Acknowledgement
 Part of our codes are adapted from these repos:
 
