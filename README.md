@@ -74,8 +74,8 @@ python train.py --ds cifar100 --suffix rho0.1 --imbalance_ratio 0.1 --gpu 0
 ### Test
 - CIFAR10-LT<br>
 ```bash
-for dout in texture svhn cifar tin lsun places365 <br>
-do<br>
+for dout in texture svhn cifar tin lsun places365
+do
 python test.py --gpu 0 --ds cifar10 --dout $dout 
     --drp <where_you_store_all_your_datasets> 
     --ckpt_path <where_you_save_the_ckpt>
@@ -83,8 +83,8 @@ done
 ```
 - CIFAR100-LT<br>
 ```bash
-for dout in texture svhn cifar tin lsun places365 <br>
-do<br>
+for dout in texture svhn cifar tin lsun places365
+do
 python test.py --gpu 0 --ds cifar100 --dout $dout 
     --drp <where_you_store_all_your_datasets> 
     --ckpt_path <where_you_save_the_ckpt> 
