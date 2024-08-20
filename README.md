@@ -26,13 +26,12 @@ wget https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
 
 ### ImageNet 
 You can get the ImageNet datasets from the official website after log-in: https://image-net.org/download-images.php
-- ImageNet-1k (ILSVRC2012)<br>
-Training set:
+- ImageNet-1k (ILSVRC2012)
+  Training set:
 ```bash
 wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_train.tar
 ```
-<br>
-Test set: 
+  Test set: 
 ```bash
 wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar
 ```
