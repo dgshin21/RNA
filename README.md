@@ -31,16 +31,23 @@ Training set:
 ```bash
 wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_train.tar
 ```
-Test set: ```bash
+Test set: 
+```bash
 wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar
 ```
 - ImageNet-10k<br>
+```bash
 wget https://image-net.org/data/imagenet10k_eccv2010.tar
+```
  
 - ImageNet-Extra<br>
+```bash
 python datasets/extract_extra_imagenet_1k.py --drp ../data
+```
 - ImageNet-1k-OOD<br>
+```bash
 python datasets/extract_ood_test_imagenet_1k.py --drp ../data
+```
 
 ## How to run the code
 ### Train
