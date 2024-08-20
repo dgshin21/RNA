@@ -76,18 +76,18 @@ python train.py --ds cifar100 --suffix rho0.1 --imbalance_ratio 0.1 --gpu 0
 ```bash
 for dout in texture svhn cifar tin lsun places365 <br>
 do<br>
-python test.py --gpu 0 --ds cifar10 --dout $dout \\ <br>
-    --drp <where_you_store_all_your_datasets> \\ <br>
-    --ckpt_path <where_you_save_the_ckpt> <br>
+python test.py --gpu 0 --ds cifar10 --dout $dout 
+    --drp <where_you_store_all_your_datasets> 
+    --ckpt_path <where_you_save_the_ckpt>
 done
 ```
 - CIFAR100-LT<br>
 ```bash
 for dout in texture svhn cifar tin lsun places365 <br>
 do<br>
-python test.py --gpu 0 --ds cifar100 --dout $dout \\ <br>
-    --drp <where_you_store_all_your_datasets> \\ <br>
-    --ckpt_path <where_you_save_the_ckpt> <br>
+python test.py --gpu 0 --ds cifar100 --dout $dout 
+    --drp <where_you_store_all_your_datasets> 
+    --ckpt_path <where_you_save_the_ckpt> 
 done
 ```
 - ImageNet-LT<br>
