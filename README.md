@@ -53,36 +53,47 @@ python datasets/extract_ood_test_imagenet_1k.py --drp ../data
 ## How to run the code
 ### Train
 - CIFAR10-LT <br>
+```bash
 python train.py --ds cifar10 --drp <where_you_store_all_your_datasets> --suffix exp0 --gpu 0
-
+```
 - CIFAR100-LT <br>
+```bash
 python train.py --ds cifar100 --drp <where_you_store_all_your_datasets> --suffix exp0 --gpu 0
-
+```
 - ImageNet-LT <br>
+```bash
 python train.py --ds imagenet --drp <where_you_store_all_your_datasets> --lr 0.1 --epochs 100 --model ResNet50 --suffix exp0 --ddp --gpu 0,1,2,3,4,5,6,7 
+```
 
 You can experiment on various settings of "Lambda" or "imbalance_ratio" by running the following as an example:<br>
-python train.py --ds cifar10 --suffix Lambda0.6 --Lambda 0.6 --gpu 0 <br>
+```bash
+python train.py --ds cifar10 --suffix Lambda0.6 --Lambda 0.6 --gpu 0
 python train.py --ds cifar100 --suffix rho0.1 --imbalance_ratio 0.1 --gpu 0
+```
 
 ### Test
 - CIFAR10-LT<br>
+```bash
 for dout in texture svhn cifar tin lsun places365 <br>
 do<br>
 python test.py --gpu 0 --ds cifar10 --dout $dout \\ <br>
     --drp <where_you_store_all_your_datasets> \\ <br>
     --ckpt_path <where_you_save_the_ckpt> <br>
 done
-
+```
 - CIFAR100-LT<br>
+```bash
 for dout in texture svhn cifar tin lsun places365 <br>
 do<br>
 python test.py --gpu 0 --ds cifar100 --dout $dout \\ <br>
     --drp <where_you_store_all_your_datasets> \\ <br>
     --ckpt_path <where_you_save_the_ckpt> <br>
 done
+```
 - ImageNet-LT<br>
+```bash
 python test.py --ds imagenet --model ResNet50 --batch_size 256 --ckpt_path \<where you save the ckpt>
+```
 
 The test code will print out the evaluation results of 3 OOD performance metrics (AUROC, AUPR, FPR95) 
 and 4 classification performance metrics (ACC, Many, Medium, Few).
