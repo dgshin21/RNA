@@ -24,6 +24,13 @@ wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 wget https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
 ```
 
+### 300K random images 
+You can get the 300k random images dataset from the GitHub repository: https://github.com/hendrycks/outlier-exposure. Alternatively, you can get this dataset directly from the following url: https://people.eecs.berkeley.edu/~hendrycks/300K_random_images.npy. 
+- 300K random images<br>
+```bash
+wget https://people.eecs.berkeley.edu/~hendrycks/300K_random_images.npy
+```
+
 ### ImageNet 
 You can get the ImageNet datasets from the official website after log-in: https://image-net.org/download-images.php
 - ImageNet-1k (ILSVRC2012)
