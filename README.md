@@ -31,6 +31,9 @@ You can get the 300k random images dataset from the GitHub repository: https://g
 wget https://people.eecs.berkeley.edu/~hendrycks/300K_random_images.npy
 ```
 
+### SCOOD
+You can get the SCOOD datasets from the GitHub repository: https://github.com/Jingkang50/ICCV21_SCOOD. Alternatively, you can get the datasets in the project page: https://jingkang50.github.io/projects/scood.
+
 ### ImageNet 
 You can get the ImageNet datasets from the official website after log-in: https://image-net.org/download-images.php
 - ImageNet-1k (ILSVRC2012)
